@@ -1,0 +1,301 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Agenda tu Consulta</title>
+</head>
+<body>
+    <main class="h-full bg-gray-50">
+    <!-- This component requires Tailwind CSS v2.0+ -->
+        <!-- Navbar Start -->
+        <div class="relative bg-gray-100">
+            <div class="mx-auto px-6">
+                <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+                    <div class="flex justify-start lg:w-0 lg:flex-1">
+                        <a href="index.html">
+                            <span class="sr-only">PBH</span>
+                            <img class="" src="img/pbh_2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="-mr-2 -my-2 md:hidden">
+                        <button type="button" class="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-900">
+                            <span class="sr-only">Open menu</span>
+                            <!-- Heroicon name: menu -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="hidden md:flex space-x-10">  
+                        <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                            Link 1
+                        </a>
+                        <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                            Link 2
+                        </a>
+                    </nav>
+                    <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                        <a href="login.html" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm text-base font-medium text-white bg-gray-600 hover:bg-gray-500">
+                            Iniciar Sesión
+                        </a>
+                        <a href="register.html" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm text-base font-medium text-white bg-gray-800 hover:bg-gray-900">
+                            Regístrate Aquí
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right hidden">
+                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+                    <div class="pt-5 pb-6 px-5">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <img class="" src="img/pbh_2.png" alt="PBH">
+                            </div>
+                            <div class="-mr-2">
+                                <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-900">
+                                    <span class="sr-only">Cerrar Menu</span>
+                                    <!-- Heroicon name: x -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <nav class="grid gap-y-8">
+                                <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                                    <!-- Heroicon name: chart-bar -->
+                                    <svg class="flex-shrink-0 h-6 w-6 text-gray-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                    </svg>
+                                    <span class="ml-3 text-base font-medium text-gray-900">
+                                        Link 1
+                                    </span>
+                                </a>            
+                                <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                                    <!-- Heroicon name: cursor-click -->
+                                    <svg class="flex-shrink-0 h-6 w-6 text-gray-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+                                    </svg>
+                                    <span class="ml-3 text-base font-medium text-gray-900">
+                                        Link 2
+                                    </span>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="py-6 px-5 space-y-6">
+                        <div>
+                            <a href="login.html" class="my-2 w-full flex items-center justify-center px-4 py-2 border border-transparent shadow-sm text-base font-medium text-white bg-gray-500 hover:bg-gray-600">
+                                Iniciar Sesión
+                            </a>
+                            <a href="register.html" class="my-2 w-full flex items-center justify-center px-4 py-2 border border-transparent shadow-sm text-base font-medium text-white bg-gray-800 hover:bg-gray-900">
+                                Regístrate Aquí
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+        <div class="w-full py-6 bg-gray-100">
+            <div class="flex">
+              <div class="w-1/3">
+                <div class="relative mb-2">
+                  <div class="w-10 h-10 mx-auto bg-gray-300 text-lg text-white flex items-center">
+                    <span class="text-center text-white w-full">
+                        1
+                    </span>
+                  </div>
+                </div>          
+                <div class="text-xs text-center md:text-base">Agendar Consulta</div>
+              </div>          
+              <div class="w-1/3">
+                <div class="relative mb-2">        
+                  <div class="w-10 h-10 mx-auto bg-gray-300 text-lg text-white flex items-center">
+                    <span class="text-center text-white w-full">
+                        2
+                    </span>
+                  </div>
+                </div>          
+                <div class="text-xs text-center md:text-base">Realiza tu pago</div>
+              </div>          
+              <div class="w-1/3">
+                <div class="relative mb-2">          
+                  <div class="w-10 h-10 mx-auto bg-black text-lg text-white flex items-center">
+                    <span class="text-center text-white w-full">
+                        3
+                    </span>
+                  </div>
+                </div>
+          
+                <div class="text-xs text-center md:text-base">Datos Personales</div>
+              </div>
+            </div>
+          </div>          
+            <div class="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-white">
+                <div class="w-full space-y-8 p-4 ">
+                <div>
+                    <h2 class="mt-6 text-center text-3xl font-bold text-gray-900">
+                        Datos Personales
+                    </h2>
+                </div>
+                <form class="mt-8 space-y-6" action="#" method="POST">
+                    <div class="-space-y-px">
+                        <div class="grid grid-cols-1 md:grid-cols-3">                            
+                            <div class="p-4 col-span-1">
+                                <label for="name" class="text-gray-900 font-bold">Nombre(s)*</label>
+                                <input id="name" name="name" type="text" required class="relative block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                            </div>
+                            <div class="p-4 col-span-1">
+                                <label for="last_name" class="text-gray-900 font-bold">Apellido Paterno*</label>
+                                <input id="last_name" name="last_name" type="text" required class="relative block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                            </div>
+                            <div class="p-4 col-span-1">
+                                <label for="mother_last_name" class="text-gray-900 font-bold">Apellido Materno*</label>
+                                <input id="mother_last_name" name="mother_last_name" type="text" required class="relative block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                            </div>
+                            <div class="p-4 col-span-1">
+                                <label for="married_lastname" class="text-gray-900 font-bold">Apellido de Casada/o*</label>
+                                <input id="married_lastname" name="married_lastname" type="text" required class="relative block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                            </div>
+                            <div class="p-4 col-span-1">
+                                <label class="block">
+                                    <span class="text-gray-900 font-bold">Estado Civil*</span>
+                                    <select class="block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                                    <option>Seleccione una opción</option>
+                                    <option>Soltero</option>
+                                    <option>Casado</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="p-4 col-span-1">                                
+                                <span class="text-gray-900 font-bold">Fecha de Nacimiento*</span>
+                                <div class="flex space-x-2">
+                                    <div class="w-1/3">
+                                        <label class="block">
+                                            <select class="block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                                            <option>MM</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="w-1/3">
+                                        <label class="block">
+                                            <select class="block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                                            <option>DD</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="w-1/3">
+                                        <label class="block">
+                                            <select class="block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                                            <option>AAAA</option>
+                                            </select>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="p-4 col-span-1">                                
+                                <span class="text-gray-900 font-bold">Lugar de Nacimiento*</span>
+                                <div class="flex space-x-2">
+                                    <div class="w-1/3">
+                                        <label class="block">
+                                            <select class="block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                                            <option>Ciudad</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="w-1/3">
+                                        <label class="block">
+                                            <select class="block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                                            <option>Estado</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="w-1/3">
+                                        <label class="block">
+                                            <select class="block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                                            <option>País</option>
+                                            </select>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="p-4 col-span-1 md:col-span-2">
+                                <label for="nationality" class="text-gray-900 font-bold">Nacionalidad(es)*</label>
+                                <input id="nationality" name="nationality" type="text" required class="relative block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                            </div>
+                            <div class="p-4 col-span-1">
+                                <label for="nationality" class="text-gray-900 font-bold">Lugar de Residencia</label>
+                                <input id="nationality" name="nationality" type="text" required class="relative block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                            </div>
+                            <div class="p-4 col-span-1">
+                                <label for="nationality" class="text-gray-900 font-bold">Código Postal*</label>
+                                <input id="nationality" name="nationality" type="text" required class="relative block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                            </div>
+                            <div class="p-4 col-span-1">
+                                <label for="nationality" class="text-gray-900 font-bold">Correo electrónico*</label>
+                                <input id="nationality" name="nationality" type="text" required class="relative block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                            </div>
+                            <div class="p-4 col-span-1">
+                                <label for="nationality" class="text-gray-900 font-bold">Teléfono Principal*</label>
+                                <input id="nationality" name="nationality" type="text" required class="relative block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                            </div>
+                            <div class="p-4 col-span-1">
+                                <label for="nationality" class="text-gray-900 font-bold">Teléfono Móvil*</label>
+                                <input id="nationality" name="nationality" type="text" required class="relative block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                            </div>
+                            <div class="p-4 col-span-1">
+                                <label for="nationality" class="text-gray-900 font-bold">Ocupación*</label>
+                                <input id="nationality" name="nationality" type="text" required class="relative block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="grid grid-cols-1 md:grid-cols-2 space-y-6">
+                            <div class="p-4 col-span-1 md:col-span-2">
+                                <label class="block">
+                                    <span class="text-gray-900 font-bold">Ingrese aquí una breve descripción de sus dudas legales o tema(s) a tratar durante el servicio*</span>
+                                    <textarea class="relative block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sml" rows="6" ></textarea>
+                                  </label>
+                            </div>
+                            <div class="p-4 col-span-1">
+                                <label for="nationality" class="text-gray-900 font-bold">Cliente anterior o nuevo cliente</label>
+                                <input id="nationality" name="nationality" type="text" required class="relative block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                            </div>
+                            <div class="p-4 col-span-1">
+                                <label for="nationality" class="text-gray-900 font-bold">¿Cómo se enteró de nosotros?*</label>
+                                <label class="block">
+                                    <select class="block w-full p-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
+                                    <option>Lorem ipsum</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="p-4 col-span-1 md:col-span-2">
+                                <div class="block">
+                                    <span class="text-gray-900 uppercase font-bold">Declaración</span>
+                                    <div class="mt-2">
+                                      <div>
+                                        <label class="inline-flex items-center">
+                                          <input type="checkbox" class="form-checkbox text-indigo-600" checked>
+                                          <span class="ml-2">Declaro que la información contenida en este formulario es verdadera, completa y proporciona la información de modo confiable y actualizada sobre todos los aspectos sobre los cuales se han hecho preguntas.</span>
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1">
+                            <div class="p-4 col-span-1">
+                                <a href="" class="p-x-10 group w-full col-span-1 relative uppercase flex justify-center py-2 px-4 border border-black text-sm font-medium text-white bg-black hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300">Continuar</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>      
+    </main>
+</body>
+</html>
