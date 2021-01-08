@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Mexicanos en el Extranjero</title>
+</head>
+
+<body>
+    <main class="h-full bg-gray-50">
+        <header id="up" class="bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative"
+            style="background-image:url(img/img_intro.jpg);">
+            <!-- Overlay Background + Center Control -->
+            <div class="h-screen flex items-center justify-center align-center h-full w-full bg-gray-900 bg-opacity-75 bg-black bg-opacity-75">
+                <div class="mx-2 text-center md:w-1/2 space-y-6 p-4">                    
+                    <div class="flex justify-center">
+                        <img class="h-20" src="img/pbh_blanco1.png" alt="">
+                    </div>
+                    <p class="text-white">Video Conferecia</p>
+                    <div class="flex items-center space-x-4">
+                        <a href="#"
+                            class="bg-gray-100 px-8 py-4 text-gray-900 font-semibold uppercase text-xs hover:bg-white ">Unirme</a>
+                        <p class="text-white">Unirme a una junta en progreso</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="#"
+                            class="bg-gray-100 px-8 py-4 text-gray-900 font-semibold uppercase text-xs hover:bg-white ">Host</a>
+                        <p class="text-white">Iniciar una sesión</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="index.html"
+                            class="bg-gray-100 px-8 py-4 text-gray-900 font-semibold uppercase text-xs hover:bg-white ">Iniciar</a>
+                        <p class="text-white">Configurar una cuenta</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("nav");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
